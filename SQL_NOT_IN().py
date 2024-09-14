@@ -1,6 +1,6 @@
 import pandas as pd  
 
-# SQL Where Clause #
+# SQL NOT_IN() #
 
 df = pd.read_csv("data.csv")
 
@@ -8,6 +8,6 @@ df = pd.read_csv("data.csv")
 
 names = ['Fernando', 'Andrew', 'Julie']
 
-#Filtrado segun lista
+#Filtrado segun lista. Negacion con " ~ "
 
 print(df[~df["First Name"].isin(names)].head())

@@ -1,6 +1,6 @@
 import pandas as pd  
 
-# SQL Where Clause #
+# SQL IN() #
 
 df = pd.read_csv("data.csv")
 
