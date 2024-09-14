@@ -5,4 +5,5 @@ import pandas as pd
 df = pd.read_csv("data.csv")
 
 #Imprimir sin repetidos
+
 print(df[["First Name","City"]].drop_duplicates())

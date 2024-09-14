@@ -5,4 +5,5 @@ import pandas as pd
 df = pd.read_csv("data.csv")
 
 #Solo imprimir [["columna 1", "columna 2"]]
+
 print(df[["First Name", "Last Name"]].head(10))

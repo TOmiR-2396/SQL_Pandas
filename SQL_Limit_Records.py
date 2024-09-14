@@ -5,4 +5,5 @@ import pandas as pd
 df = pd.read_csv("data.csv")
 
 #Solo imprimir primeras 'n' filas
+
 print(df.head(15))
