@@ -13,21 +13,23 @@ df = pd.read_csv("data.csv")
 # print(high_salary['Name'])
 
 # Eliminar las columnas deseadas (reemplaza 'columna1' y 'columna2' por los nombres reales de tus columnas)
-# df = df.drop(['Customer Id'], axis=1)
+# df = df.drop(['City'], axis=1)
 
 #df['Subscription Date'] = pd.to_datetime(df['Subscription Date'])
 
-# Crear columna de "Age" con valores random
+# Crear columna de "Age" y "Income" con valores random
 # np.random.seed(0)  
 # df['Age'] = np.random.randint(20, 70, size=len(df))
+# np.random.seed(0)
+# df['Income'] = np.random.randint(300000, 1250001, size=len(df))
 
 # Renombrar la columna 'Phone 1' a 'Phone'
 # df.rename(columns={'Phone 1': 'Phone'}, inplace=True)
 
-#new_order = ['Index', 'First Name', 'Last Name', 'Age', 'Company', 'City', 'Country', 'Phone', 'Email', 'Subscription Date']
+# new_order = ['Index', 'First Name', 'Last Name', 'Age', 'Company', 'Income', 'Country', 'Phone', 'Email', 'Subscription Date']
 
 # Reordenar las columnas
-#df = df[new_order]
+# df = df[new_order]
 
 # Guardar el archivo modificado (opcional)
 df.to_csv('data.csv', index=False)
